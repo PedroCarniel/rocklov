@@ -12,9 +12,11 @@ class MongoDB
         @equipos = client[:equipos]
     end
 
-    def remover_usuario(email)
-      @users.delete_many({email: email})
-    end
+    # Função que parei de usar para dropar o e-mail porque se não dava erro em alguns cenários
+
+    # def remover_usuario(email)
+    #   @users.delete_many({email: email})
+    # end
 
     def get_user(email)
       user = @users.find({email: email}).first
