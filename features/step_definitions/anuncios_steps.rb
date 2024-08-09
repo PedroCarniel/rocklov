@@ -1,11 +1,11 @@
 Dado('que estou logado como {string} e {string}') do |email, password|
     @email = email
 
-    visit "/"
-    find("#user_email").set email
-    find("#user_password").set password
-
-    click_button "Entrar"
+    login_page = LoginPage.new
+    login_page.abre_pagina
+    login_page.campo_email.set email
+    login_page.campo_senha.set password
+    login_page.botao_entrar
   end
 
   Dado('que acesso o formulário de cadastro de anúncios') do
