@@ -1,9 +1,12 @@
 require 'mongo'
 
-# Hook que instancia a variável permitindo utilizar em varios steps sem precisar ficar inicializando ela
+# Hooks que instanciam as variáveis permitindo utilizar em varios steps sem precisar ficar inicializando ela
 Before do
     @alert= Alert.new
     @login_page = LoginPage.new
+    @signup_page = SignupPage.new
+    @dash_page = DashPage.new
+    @equipos_page = EquiposPage.new
 end
 
 # Drop do banco pros testes não bugarem

@@ -2,7 +2,7 @@
 
 # Utilizado no cadastro e no login
 Então('sou redirecionado para o Dashboard') do
-    expect(page).to have_css ".dashboard"
+    expect(@dash_page.on_dash?).to be true
 end
 
 # Tentativas de cadastro/login com falha vão passar por aqui sendo elas: nome, email, senha
