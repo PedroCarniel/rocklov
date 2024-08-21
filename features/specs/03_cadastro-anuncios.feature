@@ -33,8 +33,10 @@ Funcionalidade: Cadastro de Anúncios
             Então deve conter a mensagem de alerta: "<saida>"
 
             Exemplos:
-                |    foto       |      nome         | categoria | preco | saida                             |
-                |               | Violão de Nylon   | Cordas    | 150   | Adicione uma foto no seu anúncio! |
-                | clarinete.jpg |                   | Outros    | 250   | Informe a descrição do anúncio!   |
-                | mic.jpg       | Microfone Shure   |           | 100   | Informe a categoria               |
-                | trompete.jpg  | Trompete Clássico | Outros    |       | Informe o valor da diária         |
+                |    foto       |      nome         | categoria | preco | saida                                |
+                |               | Violão de Nylon   | Cordas    | 150   | Adicione uma foto no seu anúncio!    |
+                | clarinete.jpg |                   | Outros    | 250   | Informe a descrição do anúncio!      |
+                | mic.jpg       | Microfone Shure   |           | 100   | Informe a categoria                  |
+                | trompete.jpg  | Trompete Clássico | Outros    |       | Informe o valor da diária            |   
+                | conga.jpg     | Gonga             | Outros    | abc   | O valor da diária deve ser numérico! |
+                | conga.jpg     | Gonga             | Outros    | 100a  | O valor da diária deve ser numérico! |
